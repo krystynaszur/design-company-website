@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+body {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header > img {
+      padding-left: 250px;
+  }
+  header > ul {
+    list-style-type: none;
+    padding-right: calc(1600px - 1355px);
+    padding-left: 150px;
+  }
+
+  header > ul > li {
+    display: inline-block;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+
+  .carousel-cell {
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .flickity-page-dots { 
+      bottom: 2.5rem;
+      z-index: 3;
+      color: white; 
+      height: 20px;
+}
+
+.flickity-page-dots .dot {
+    background:  #b88b58;;
+    height: 15px;
+    width: 15px;
+    opacity: 0.5;
+}
+
+  .flickity-button {
+      display: none;
+  }
+
+  .jumbotron {
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .jumbotron h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0 47px 0;
+  }
+  
+ .jumbotron h1 {
+    color: #ffffff; 
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin:  0 0 10px 0;
+  }
+
+.jumbotron .gold {
+    color: #b88b58;
+}
+  .jumbotron button {
+    width: 200px;
+    height: 50px;
+    background-color: #b88b58;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    color: white;
+    border: none;
+  }
+  
+  header ul > li > a {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+  }
+  
+/*# sourceMappingURL=style.css.map */
