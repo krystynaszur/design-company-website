@@ -206,10 +206,26 @@ section .subheader {
 .services {
   background-color: black;
   width: 100vw;
-  padding: 0 245px;
+  padding-left: 245px;
+  padding-right: 245px;
 }
 
 .services h2 {
+  color: white;
+}
+
+.services .advantage {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.services h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
   color: white;
 }
 

@@ -198,11 +198,35 @@ section .subheader {
 .services {
   background-color: black;
   width: 100vw;
-  padding: 0 245px;
+padding-left: 245px;
+padding-right: 245px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .services h2 {
   color: white;
+}
+
+.services .col-l-3 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0 15px 80px 15px;
+  box-sizing: border-box;
+}
+
+.services h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.services .col-l-3 p {
+  color: #7e7e7e;
+font-size: 0.75rem;
+font-weight: 300;
 }
 
 [class*="col-"] {
