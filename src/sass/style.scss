@@ -1,116 +1,251 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 body {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  header {
-    background-color: black;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  header > img {
-      padding-left: 250px;
-  }
-  header > ul {
-    list-style-type: none;
-    padding-right: calc(1600px - 1355px);
-    padding-left: 150px;
-  }
+  margin: 0;
+  font-size: 16px;
+  font-family: Montserrat;
+}
 
-  header > ul > li {
-    display: inline-block;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 10px;
-  }
+header {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-  .carousel-cell {
-      width: 100vw;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-  }
+header > img {
+  padding-left: 250px;
+}
 
-  .flickity-page-dots { 
-      bottom: 2.5rem;
-      z-index: 3;
-      color: white; 
-      height: 20px;
+header > ul {
+  list-style-type: none;
+  padding-right: calc(1600px - 1355px);
+  padding-left: 150px;
+}
+
+header > ul > li {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header > ul > li > a {
+ position: relative;
+ height: 100px;
+ line-height: 100px;
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: 400;
+}
+
+header > ul > li > a:hover:before {
+  border-bottom: 8px solid #b88b58;
+  content: '';
+  width: 100%;
+ position: absolute;
+  z-index: 1;
+ top: 50px;
+}
+
+.carousel-cell {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flickity-page-dots {
+  bottom: 2.5rem;
+  z-index: 3;
+  color: white;
+  height: 20px;
 }
 
 .flickity-page-dots .dot {
-    background:  #b88b58;;
-    height: 15px;
-    width: 15px;
-    opacity: 0.5;
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid  #b88b58;
 }
 
-  .flickity-button {
-      display: none;
-  }
+.flickity-page-dots .dot.is-selected {
+  background: #b88b58;
+}
 
-  .jumbotron {
-    background-image: url("../images/background.png");
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - 100px);
-    text-transform: uppercase;
-    font-family: "Montserrat";
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
-  }
+.flickity-button {
+  display: none;
+}
 
-  .jumbotron h2 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 30px 0 47px 0;
-  }
-  
- .jumbotron h1 {
-    color: #ffffff; 
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin:  0 0 10px 0;
-  }
+.jumbotron {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.jumbotron h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 0 47px 0;
+}
+
+.jumbotron h1 {
+  color: #ffffff;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
 
 .jumbotron .gold {
-    color: #b88b58;
+  color: #b88b58;
 }
-  .jumbotron button {
-    width: 200px;
-    height: 50px;
-    background-color: #b88b58;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 20px;
-    font-family: "Montserrat";
-    color: white;
-    border: none;
+
+ button {
+  width: 200px;
+  height: 50px;
+  background-color: #b88b58;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  color: white;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+aside {
+  background-color: #b88b58;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  bottom: 35px;
+ right: 100px;
+ float: right;
+ box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+ transition: background-color 0.5s;
+}
+
+.telephone {
+ height: 40px;
+ width: 40px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+}
+
+button:hover,
+aside:hover {
+  cursor: pointer;
+ background-color: #89643a;
+}
+section {
+  padding-top: 62px;
+  float: left;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+section .subheader {
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aeaeae;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+.about {
+ padding: 0 245px;
+}
+
+.about div {
+  margin-bottom: 90px;
+}
+
+.about div p {
+  color: #242424;
+font-size: 0.875rem;
+font-weight: 300;
+line-height: 1.56;
+margin-bottom: 30px;
+margin-right: 30px;
+}
+
+.services {
+  background-color: black;
+  width: 100vw;
+  padding: 0 245px;
+}
+
+.services h2 {
+  color: white;
+}
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  margin: 0 auto;
+}
+
+@media (min-width: 981px) {
+  /* For desktop: */
+  .col-l-1 {
+    width: 8.33%;
   }
-  
-  header ul > li > a {
-    color: #ffffff;
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 41px;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
+  .col-l-2 {
+    width: 16.66%;
   }
-  
-/*# sourceMappingURL=style.css.map */
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
