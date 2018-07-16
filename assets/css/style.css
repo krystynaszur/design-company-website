@@ -333,7 +333,7 @@ left: 5%;
   background-image: url("../images/team-background.png");
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -343,7 +343,7 @@ left: 5%;
 }
 
 .team-carousel .flickity-slider {
-  left: -25% !important;
+  left: -380px !important;
 }
 .team-carousel .carousel-cell {
   background-color: white;
