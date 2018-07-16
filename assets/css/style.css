@@ -354,7 +354,6 @@ left: 5%;
 
 .team-carousel .flickity-page-dots {
   bottom: 40px;
-  
 }
 .team-carousel .carousel-cell img + p {
   text-transform: uppercase;
@@ -389,6 +388,48 @@ left: 5%;
 .social-media i {
 width: 15px;
   color:white;
+}
+
+.clients-carousel {
+  width: 100vw;
+}
+
+.clients-carousel .carousel-cell {
+ height: 460px;
+}
+
+.clients-carousel .carousel-cell img {
+margin-top: 70px;
+margin-bottom: 30px;
+}
+
+.clients-carousel .carousel-cell .name {
+font-size: 1.5rem;
+font-weight: 700;
+}
+.clients-carousel .carousel-cell .position {
+height: 1.125rem;
+font-weight: 700;
+margin: 0 0 30px 0;
+}
+.clients-carousel .carousel-cell p {
+max-width: 720px;
+text-align: center;
+}
+
+.clients-carousel .carousel-cell .quotes {
+  margin: 0;
+}
+
+.clients-carousel .carousel-cell .comment {
+  color: #7e7e7e;
+  line-height: 25px;
+  font-size: 0.875rem;
+}
+.clients-carousel .flickity-page-dots {
+  bottom: -100px;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 [class*="col-"] {
