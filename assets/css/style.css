@@ -17,13 +17,17 @@ body {
 }
 
 .menu > img {
-  padding-left: 250px;
+  padding-left: 10vw;
 }
 
 .menu > ul {
   list-style-type: none;
-  padding-left: 150px;
-  padding-right: 50px;
+  padding-left: 2vw;
+  padding-right: 10vw;
+ right: 0;
+ position: absolute;
+ line-height: 100px;
+ margin: 0;
 }
 
 .menu > ul > li {
@@ -881,7 +885,7 @@ position: absolute;
   margin: 0 auto;
 }
 
-@media (min-width: 981px) {
+@media (min-width: 1280px) {
   /* For desktop: */
   .col-l-1 {
     width: 8.33%;
@@ -921,4 +925,17 @@ position: absolute;
   }
 }
 
+@media (min-width: 980px) {
+  
+}
+
+@media (min-width: 768px) {
+ 
+}
+@media (min-width: 480px) {
+ 
+}
+@media (min-width: 320px) {
+ 
+}
 /*# sourceMappingURL=style.css.map */
