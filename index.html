@@ -1,5 +1,5 @@
+<!DOCTYPE html> 
 <html>
-
 <head>
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <div class="menu">
         <img src="assets/images/logo.png">
         <ul>
             <li>
@@ -45,24 +45,30 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
-    </header>
+    </div>
     <div class="jumbotron main-carousel js-flickity" data-flickity='{ "setGallerySize": false}'>
         <div class="carousel-cell">
-            <h1>Design is about </h1>
-            <h1 class="gold"> communication</h1>
-            <h2>call us: +00 0 1234 5678 </h2>
+            <p>Design is about
+                <br>
+                <span class="gold"> communication</span>
+            </p>
+            <p class="phone">call us: +00 0 1234 5678 </p>
             <button class="button">Get in touch!</button>
         </div>
         <div class="carousel-cell">
-            <h1>Branding is about </h1>
-            <h1 class="gold"> character</h1>
-            <h2>call us: +00 0 1234 5678 </h2>
+            <p>Design is about
+                <br>
+                <span class="gold"> communication</span>
+            </p>
+            <p class="phone">call us: +00 0 1234 5678 </p>
             <button class="button">Get in touch!</button>
         </div>
         <div class="carousel-cell">
-            <h1>Photography is about </h1>
-            <h1 class="gold"> precision and patience</h1>
-            <h2>call us: +00 0 1234 5678 </h2>
+            <p>Design is about
+                <br>
+                <span class="gold"> communication</span>
+            </p>
+            <p class="phone">call us: +00 0 1234 5678 </p>
             <button class="button">Get in touch!</button>
         </div>
 
@@ -71,8 +77,10 @@
         <img class="telephone" src="assets/images/telephone.svg">
     </aside>
     <section class="about">
-        <h2>About us</h2>
-        <p class="subheader">Who we are?</p>
+        <header>
+            <h2>About us</h2>
+            <p class="subheader">Who we are?</p>
+        </header>
         <div class="col-l-7">
             <p>
                 Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum
@@ -87,8 +95,10 @@
         </div>
     </section>
     <section class="services">
-        <h2>Services</h2>
-        <p class="subheader">Services that we provide</p>
+        <header>
+            <h2>Services</h2>
+            <p class="subheader">Services that we provide</p>
+        </header>
         <div class=" col-l-3">
             <img src="assets/images/quality.svg">
             <h3>High quality DESIGN</h3>
@@ -112,8 +122,10 @@
         </div>
     </section>
     <section class="projects">
-        <h2>Our projects</h2>
-        <p class="subheader">What we create</p>
+        <header>
+            <h2>Our projects</h2>
+            <p class="subheader">What we create</p>
+        </header>
         <div class="button-group filters-button-group">
             <button class="grid-button is-checked" data-filter="*">All</button>
             <button class="grid-button" data-filter=".photos">Photos</button>
@@ -211,8 +223,10 @@
         <button class="button showMore">More projects</button>
     </section>
     <section class="team">
-        <h2>Our team</h2>
-        <p class="subheader">our co-workers</p>
+        <header>
+            <h2>Our team</h2>
+            <p class="subheader">our co-workers</p>
+        </header>
         <div class="team-carousel main-carousel js-flickity">
             <div class="carousel-cell">
                 <img src="assets/images/img-team-1.png">
@@ -301,8 +315,10 @@
         </div>
     </section>
     <section class="clients">
-        <h2>Happy clients</h2>
-        <p class="subheader">client reviews</p>
+        <header>
+            <h2>Happy clients</h2>
+            <p class="subheader">client reviews</p>
+        </header>
         <div class="clients-carousel main-carousel js-flickity">
             <div class="carousel-cell">
                 <img src="assets/images/img-client.png">
@@ -343,8 +359,10 @@
         <img src="assets/images/logo-6.png">
     </section>
     <section class="price">
-        <h2>Price</h2>
-        <p class="subheader">Pricing table</p>
+        <header>
+            <h2>Price</h2>
+            <p class="subheader">Pricing table</p>
+        </header>
         <div class="price-bracket-box">
             <div class="price-bracket">
                 <p>Express</p>
@@ -409,8 +427,10 @@
         </div>
     </section>
     <section class="premium">
-        <h2>Premium</h2>
-        <p class="subheader">Even More Features Available</p>
+        <header>
+            <h2>Premium</h2>
+            <p class="subheader">Even More Features Available</p>
+        </header>
         <div class="main-carousel js-flickity">
             <div class="carousel-cell">
                 <div class="col-l-5">
@@ -491,8 +511,10 @@
         <button class="button">Get in touch</button>
     </section>
     <section class="facts">
-        <h2>Some facts</h2>
-        <p class="subheader">About our work</p>
+        <header>
+            <h2>Some facts</h2>
+            <p class="subheader">About our work</p>
+        </header>
         <div class="facts-list">
             <div class="col-l-3">
                 <p>1000</p>
@@ -546,8 +568,10 @@
         <p>150</p>
     </section>
     <section class="contact">
-        <h2>Contact us</h2>
-        <p class="subheader">our agency located in Melbourne, Australia</p>
+        <header>
+            <h2>Contact us</h2>
+            <p class="subheader">our agency located in Melbourne, Australia</p>
+        </header>
         <form action="/action_page.php">
             <div class="row">
                 <input class="name" type="text" name="firstname" placeholder="Name">
@@ -611,11 +635,11 @@
             </ul>
         </div>
     </section>
-  
+
     <section class="footer">
-            <aside class="top" onclick="topFunction()">
-                    <i class="fas fa-angle-up"></i>
-               </aside>
+        <aside class="top" onclick="topFunction()">
+            <i class="fas fa-angle-up"></i>
+        </aside>
         <div class="col-l-4">
             <div class="social-media-panel">
                 <div class="social-media ">
