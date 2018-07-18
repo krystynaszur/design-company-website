@@ -731,6 +731,44 @@ padding-right: 60px;
   margin: 0px auto 75px auto;
 }
 
+.map {
+  width: 100vw;
+  height: 415px;
+  background-image: url("../images/map.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.map .box {
+  height: 350px;
+  background-color: white;
+  width: 40%;
+  margin-left: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.map .box ul {
+    list-style-type: none;
+}
+
+.map .box ul li {
+ display: flex;
+ align-items: center;
+}
+
+.map .box .icon {
+  background-color: #aeaeae;
+  color: white;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 [class*="col-"] {
   float: left;
