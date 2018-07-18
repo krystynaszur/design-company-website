@@ -680,6 +680,57 @@ padding-right: 60px;
   background-color: #b71c29;
 }
 
+.contact {
+  width: 100vw;
+  background-color: #f7f7f7;
+}
+
+.contact .row {
+ display: flex;
+ justify-content: center;
+}
+
+.contact .row:first-child {
+  height: 50px;
+}
+
+.contact .row:nth-child(2) {
+  height: 70px;
+}
+
+.contact .row:nth-child(3) {
+  height: 110px;
+  margin-bottom: 50px;
+}
+
+.contact .row input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;;
+  color: #9e9e9e;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact .row input:focus {
+  outline:  none;
+  border-bottom: 3px solid #b88b58;
+}
+
+.contact .row .name {
+   margin-right: 10px;
+}
+
+.contact .row .email {
+  margin-left: 10px;
+}
+
+.contact form {
+  max-width: 550px;
+  margin: 0px auto 75px auto;
+}
+
 
 [class*="col-"] {
   float: left;
