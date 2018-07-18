@@ -32,3 +32,8 @@ showMore.addEventListener( 'click', function( event ) {
    iso.arrange({ filter: '*' });
 
 });
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
