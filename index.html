@@ -14,9 +14,12 @@
 </head>
 
 <body>
-    <div class="menu">
+    <div class="top-bar">
         <img src="assets/images/logo.png">
-        <ul>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <span class="menu-line">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -29,9 +32,12 @@
             <li>
                 <a href="#">Our projects</a>
             </li>
-            <li>
-                <a href="#">Our team</a>
-            </li>
+            
+        </span>
+        <span class="menu-line">
+                <li>
+                        <a href="#">Our team</a>
+                    </li>
             <li>
                 <a href="#">Happy clients</a>
             </li>
@@ -45,6 +51,7 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
+    </span>
     </div>
     <div class="jumbotron main-carousel js-flickity" data-flickity='{ "setGallerySize": false}'>
         <div class="carousel-cell">
