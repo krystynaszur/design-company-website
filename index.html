@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -17,9 +18,11 @@
     <div class="top-bar">
         <img src="assets/images/logo.png">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
         <ul class="menu">
-           <!--  <span class="menu-line"> -->
+
             <li>
                 <a href="#">Home</a>
             </li>
@@ -32,11 +35,10 @@
             <li>
                 <a href="#">Our projects</a>
             </li>
-        <!--</span>
-        <span class="menu-line">-->
-                <li>
-                        <a href="#">Our team</a>
-                    </li>
+
+            <li>
+                <a href="#">Our team</a>
+            </li>
             <li>
                 <a href="#">Happy clients</a>
             </li>
@@ -50,11 +52,10 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
-    <!--</span>-->
     </div>
     <div class="jumbotron main-carousel js-flickity" data-flickity='{ "setGallerySize": false}'>
         <div class="carousel-cell">
-            <p>Design is about
+            <p class="slogan">Design is about
                 <br>
                 <span class="gold"> communication</span>
             </p>
@@ -62,7 +63,7 @@
             <button class="button">Get in touch!</button>
         </div>
         <div class="carousel-cell">
-            <p>Design is about
+            <p class="slogan">Design is about
                 <br>
                 <span class="gold"> clarity</span>
             </p>
@@ -70,7 +71,7 @@
             <button class="button">Get in touch!</button>
         </div>
         <div class="carousel-cell">
-            <p>Design is about
+            <p class="slogan">Design is about
                 <br>
                 <span class="gold"> simplicity</span>
             </p>
@@ -106,22 +107,30 @@
             <p class="subheader">Services that we provide</p>
         </header>
         <div class=" col-l-3">
-            <img src="assets/images/quality.svg">
+            <div class="services-image">
+                <img src="assets/images/quality.svg" alt="quality1">
+            </div>
             <h3>High quality DESIGN</h3>
             <p>Praesent metus urna, feugiata placerat elementum</p>
         </div>
         <div class=" col-l-3">
-            <img src="assets/images/star.svg">
+            <div class="services-image">
+                <img src="assets/images/star.svg" alt="quality2">
+            </div>
             <h3>modern design</h3>
             <p>Praesent metus urna, feugiata placerat elementum</p>
         </div>
         <div class=" col-l-3">
-            <img src="assets/images/clock.svg">
+            <div class="services-image">
+                <img src="assets/images/clock.svg" alt="quality3">
+            </div>
             <h3>regular updates</h3>
             <p>Praesent metus urna, feugiata placerat elementum</p>
         </div>
         <div class=" col-l-3">
-            <img src="assets/images/support.svg">
+            <div class="services-image">
+                <img src="assets/images/support.svg" alt="quality4">
+            </div>
             <h3>Fast AND FREE support
             </h3>
             <p>Praesent metus urna, feugiata placerat elementum</p>
@@ -357,12 +366,24 @@
         </div>
     </section>
     <section class="client-logos">
-        <img src="assets/images/logo-1.png">
-        <img src="assets/images/logo-2.png">
-        <img src="assets/images/logo-3.png">
-        <img src="assets/images/logo-4.png">
-        <img src="assets/images/logo-5.png">
-        <img src="assets/images/logo-6.png">
+        <div class="col-l-2">
+            <img src="assets/images/logo-1.png" alt="client1">
+        </div>
+        <div class="col-l-2">
+            <img src="assets/images/logo-2.png" alt="client2">
+        </div>
+        <div class="col-l-2">
+            <img src="assets/images/logo-3.png" alt="client3">
+        </div>
+        <div class="col-l-2">
+            <img src="assets/images/logo-4.png" alt="client4">
+        </div>
+        <div class="col-l-2">
+            <img src="assets/images/logo-5.png" alt="client5">
+        </div>
+        <div class="col-l-2">
+            <img src="assets/images/logo-6.png" alt="client6">
+        </div>
     </section>
     <section class="price">
         <header>
@@ -432,7 +453,7 @@
             </div>
         </div>
     </section>
-    <section class="premium">
+    <!-- <section class="premium">
         <header>
             <h2>Premium</h2>
             <p class="subheader">Even More Features Available</p>
@@ -440,7 +461,7 @@
         <div class="main-carousel js-flickity">
             <div class="carousel-cell">
                 <div class="col-l-5">
-                    <img src="assets/images/premium.png">
+                    <img src="assets/images/premium.png" alt="premium1" >
                 </div>
                 <div class="col-l-7">
                     <ul>
@@ -465,7 +486,7 @@
             </div>
             <div class="carousel-cell">
                 <div class="col-l-5">
-                    <img src="assets/images/premium.png">
+                    <img src="assets/images/premium.png" alt="premium2">
                 </div>
                 <div class="col-l-7">
                     <ul>
@@ -490,7 +511,7 @@
             </div>
             <div class="carousel-cell">
                 <div class="col-l-5">
-                    <img src="assets/images/premium.png">
+                    <img src="assets/images/premium.png" alt="premium3">
                 </div>
                 <div class="col-l-7">
                     <ul>
@@ -516,7 +537,7 @@
         </div>
         <button class="button">Get in touch</button>
     </section>
-    <section class="facts">
+      <section class="facts">
         <header>
             <h2>Some facts</h2>
             <p class="subheader">About our work</p>
@@ -549,30 +570,37 @@
         <p>Tell about us:</p>
         <div class="social-media-fans">
             <div class="social-media twitter">
-                <i class="fab fa-twitter"></i>
-
+                <div class="social-media-icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p>150</p>
             </div>
-            <p>150</p>
+            <div class="social-media linkedin">
+                <div class="social-media-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <p>150</p>
+            </div>
+            <div class="social-media facebook">
+                <div class="social-media-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <p>150</p>
+            </div>
+            <div class="social-media google-plus">
+                <div class="social-media-icon">
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+                <p>150</p>
+            </div>
+            <div class="social-media pinterest">
+                <div class="social-media-icon">
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+                <p>150</p>
+            </div>
         </div>
-        <div class="social-media linkedin">
-            <i class="fab fa-linkedin-in"></i>
-
-        </div>
-        <p>150</p>
-        <div class="social-media facebook">
-            <i class="fab fa-facebook-f"></i>
-        </div>
-        <p>150</p>
-        <div class="social-media google-plus">
-            <i class="fab fa-google-plus-g"></i>
-
-        </div>
-        <p>150</p>
-        <div class="social-media pinterest">
-            <i class="fab fa-pinterest-p"></i>
-        </div>
-        <p>150</p>
-    </section>
+    </section>  -->
     <section class="contact">
         <header>
             <h2>Contact us</h2>
@@ -594,7 +622,7 @@
             </div>
         </form>
 
-    </section>
+    </section>-
     <section class="map">
         <div class="box">
             <ul>
@@ -602,41 +630,35 @@
                     <div class="icon col-l-2">
                         <i class="far fa-envelope"></i>
                     </div>
-                    <div class="col-l-10">
-                        <p> PO Box 16122 Collins Street West Victoria 8007 Australia </p>
-                    </div>
+                    <p> PO Box 16122 Collins Street West Victoria 8007 Australia </p>
                 </li>
                 <li>
                     <div class="icon col-l-2">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="col-l-10">
-                        <p>121 King Street, Melbourne Victoria 3000 Australia </p>
-                    </div>
+                    <p>121 King Street, Melbourne Victoria 3000 Australia </p>
+
                 </li>
                 <li>
                     <div class="icon col-l-2">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <div class="col-l-10">
-                        <p>+00 0 1234 5678</p>
-                    </div>
+                    <p>+00 0 1234 5678</p>
+
                 </li>
                 <li>
                     <div class="icon col-l-2">
                         <i class="fas fa-at"></i>
                     </div>
-                    <div class="col-l-10">
-                        <p>bukindesign@gmail.com </p>
-                    </div>
+                    <p>bukindesign@gmail.com </p>
+
                 </li>
                 <li>
                     <div class="icon col-l-2">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <div class="col-l-10">
-                        <p>www.envato.com</p>
-                    </div>
+                    <p>www.envato.com</p>
+
                 </li>
             </ul>
         </div>
@@ -682,13 +704,12 @@
                 rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,vulputate
                 urna, at pellentesque risus orci in ante.</p>
         </div>
-        <div class="col-l-4">
+        <div class="col-l-4 form-box">
             <form action="/action_page.php">
                 <input class="email" type="text" name="email" placeholder="Email to suscribe">
 
                 <button class="button" type="submit" value="Submit">Subscribe</button>
-        </div>
-        </form>
+            </form>
         </div>
     </section>
     <script src="assets/vendor/flickity.pkgd.min.js "></script>

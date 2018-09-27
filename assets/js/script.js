@@ -1,3 +1,5 @@
+
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity(elem, {
   // options
@@ -39,7 +41,7 @@ showMore.addEventListener( 'click', function( event ) {
 var showMore = document.querySelector('.showMore');
 
 showMore.addEventListener('click', function(event){
-  var url = '';
+  var url = '../json/photos.json';
 
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url);
