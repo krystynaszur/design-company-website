@@ -9,8 +9,8 @@ var flkty = new Flickity(elem, {
 });
 
 
-var elem = document.querySelector('.grid');
-var iso = new Isotope(elem, {
+var grid = document.querySelector('.grid');
+var iso = new Isotope(grid, {
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
 });
@@ -27,11 +27,32 @@ filtersElem.addEventListener( 'click', function( event ) {
  
 });
 
+/*
 var showMore = document.querySelector('.showMore');
 showMore.addEventListener( 'click', function( event ) {
-   iso.arrange({ filter: '*' });
+  var items = '<div class="grid-item">YAY</div>';
+  elem.append(items);
+  elem.isotope( 'appended', items );
 
-});
+});*/
+
+var showMore = document.querySelector('.showMore');
+
+showMore.addEventListener('click', function(event){
+  var url = '';
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url);
+  xhr.addEventListener('load', function(){
+    var response = JSON.parse(xhr.response);
+  });
+  xhr.send();
+
+        grid.appendChild(response);
+        iso.appended(response);
+      }
+);
+
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
