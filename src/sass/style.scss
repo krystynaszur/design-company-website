@@ -179,6 +179,11 @@ body {
   color: white;
   border: none;
   transition: background-color 0.5s;
+  display: block;
+  text-decoration: none;
+  line-height: 50px;
+text-align: center;
+margin: 0 auto;
 }
 
 aside {
@@ -343,7 +348,7 @@ position: relative;
   filter: brightness(30%);
 } 
 .showMore {
-  margin: 15px auto 55px auto;
+  margin: 35px auto 55px auto;
 }
 
 .filters-button-group {
@@ -454,6 +459,11 @@ width: 15px;
   background-color: #f7f7f7;
   padding-bottom: 100px;
 }
+
+.clients .subheader {
+ margin-bottom: 0;
+}
+
 .clients-carousel {
   width: 100vw;
 }
@@ -476,6 +486,17 @@ height: 1.125rem;
 font-weight: 700;
 margin: 0 0 30px 0;
 }
+.clients-carousel .carousel-cell .position:after {
+  content: "";
+  background: url('../images/quotes.png');
+  background-repeat: no-repeat;
+  display: block;
+  margin: 10px auto;
+  width: 30px;
+  height: 30px;
+ // position: relative;
+}
+
 .clients-carousel .carousel-cell p {
 max-width: 720px;
 text-align: center;
@@ -540,7 +561,7 @@ box-sizing: border-box;
   padding: 33px 0;
 }
 
-.price-bracket p:first-child {
+.price-bracket h3 {
   color: #242424;
 font-size: 0.875rem;
 font-weight: 700;
@@ -553,22 +574,45 @@ font-weight: 700;
 margin: 0;
 }
 
-.price-bracket p:nth-child(3){
+/*.price-bracket p:nth-child(3){
   color: #aeaeae;
 font-size: 0.625rem;
 font-weight: 400;
 text-transform: uppercase;
 letter-spacing: 0.5px;
-}
+}*/
 
-.price-bracket p:nth-child(4){
+.price-bracket .feature {
   //color: #7e7e7e;
 font-size: 0.625rem;
 line-height: 13px;
-padding: 25px 0;
+padding: 0;
 }
 
+.price-bracket .feature:after {
+  content: "";
+  font-size: 0.625rem;
+  display: block;
+  border-bottom: 2px solid black;
+  width: 15px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+ }
+
+.price-bracket p:nth-child(2):after {
+ 
+ content: "/month";
+ display: block;
+ width: 100%;
+ color: #aeaeae;
+ font-size: 0.625rem;
+ font-weight: 400;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ margin-top: 5px;
+}
 .choose {
+  display: block;
   width: 130px;
   height: 50px;
   border-radius: 25px;
@@ -578,6 +622,9 @@ font-size: 0.75rem;
 font-weight: 700;
 text-transform: uppercase;
 border: none;
+margin: 20px auto;
+line-height: 50px;
+text-decoration: none
 }
 
 #choose:hover {
@@ -616,7 +663,7 @@ border: none;
   margin: 0;
 }
 
-.premium .col-l-7 ul li p:first-child{
+.premium .col-l-7 ul li h3{
 font-size: 21px;
 font-weight: 700;
 text-transform: uppercase;
@@ -633,7 +680,7 @@ line-height: 1.5;
   float: right;
 }
 
-.premium button {
+.premium .button {
 margin: 0 auto;
 display: block;
 }
