@@ -59,7 +59,7 @@ body {
 }
 
 .top-bar > img {
-  padding-left: 10vw;
+ padding-left: 10vw;
   height: 50px;
 }
 
@@ -71,6 +71,7 @@ body {
  position: absolute;
 // line-height: 100px;
  margin: 0;
+ box-sizing: border-box
 }
 
 .top-bar > ul li {
@@ -185,13 +186,13 @@ aside {
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  position: absolute;
- // top: -45px;
-  bottom: -45px;
+  position: relative;
+  top: -30px;
   right: 100px;
   float: right;
   box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
   transition: background-color 0.5s;
+
 }
 
 .call .telephone {
@@ -230,7 +231,7 @@ section .subheader {
 }
 
 .about {
- // padding: 62px 245px 0px 245px;
+ padding: 0 20vw 0px 20vw;
   width: 100vw;
   box-sizing: border-box;
 }
@@ -251,8 +252,7 @@ section .subheader {
 .services {
   background-color: black;
   width: 100vw;
-//padding-left: 245px;
-//padding-right: 245px;
+padding: 80px 0 80px 0;
   text-align: center;
   box-sizing: border-box;
 }
@@ -263,12 +263,12 @@ section .subheader {
 
 .services .col-l-3 {
   color: #ffffff;
-  font-size: 1.125rem;
+  font-size: 1.325rem;
   font-weight: 400;
-  padding: 0 15px 80px 15px;
+ padding: 20px 15px 80px 15px;
   box-sizing: border-box;
-  height: 200px;
-  
+  height: 250px;
+
 }
 
 .services .col-l-3 .services-image {
@@ -286,28 +286,29 @@ section .subheader {
   color: #7e7e7e;
 font-size: 0.75rem;
 font-weight: 300;
-padding: 20px;
-margin-bottom: 20px;
+//padding: 20px 20px 40px 20px;
+margin-bottom: 50px;
 }
 
 .projects {
-  width: 100vw;
+ width: 100vw;
   display: flex;
   height: auto;
   flex-direction: column;
   justify-content: center;
-  
+  margin: 0 auto;
 }
-
 .grid {
-//margin: 0 200px;
-position: absolute;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .grid-item { 
-  width: 21%; 
-float: left;
-margin: 2%;
+  width: 25%;
+margin-top: 10px;
 display: flex;
 justify-content: center;
 box-sizing: border-box;
@@ -323,6 +324,7 @@ position: relative;
   display: none;
   text-align: center;
  font-size: 0.75rem;
+ padding: 5px;
 }
 
 .grid-item .layer p:first-child {
@@ -348,12 +350,14 @@ position: relative;
   background-color: #ededed;
  border-radius: 25px;
 max-width: 720px;
+width: 100%;
 margin: 0 auto;
   border: 1px solid #cfcfcf;
   position: relative;
   overflow: hidden;
   height: 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .grid-button {
@@ -363,7 +367,7 @@ margin: 0 auto;
   position: relative;
   height: 100%;
   border: none;
-  margin: 0 auto;
+  margin: 0 10px;
   box-sizing: border-box;
   font-size: 0.875rem;
   padding: 0 10px;
@@ -405,7 +409,7 @@ left: 5%;
   background-color: white;
   width: 350px;
   height: 450px;
-// margin: 0 15px 100px 15px;
+margin: 0 10px 100px 10px;
 }
 
 .team-carousel .flickity-page-dots {
@@ -422,7 +426,7 @@ left: 5%;
   display: flex;
   width: 80%;
  justify-content: center;
- //padding: 35px 40px;
+padding: 35px 40px;
 }
 
 .team .social-media {
@@ -495,22 +499,26 @@ text-align: center;
 
 .client-logos {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  width: 100vw;
+ flex-wrap: wrap;
+  //margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  padding: 62px;
+  box-sizing: border-box
 }
 
-.client-logos .col-l-2 {
+/*.client-logos .col-l-2 {
  min-height: 160px;
 //padding: 0 20vw;
 box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items:center;
-}
+}*/
 
 .client-logos img {
-  padding: 0 30px;
+  padding: 30px;
 }
 
 .price {
@@ -560,7 +568,7 @@ line-height: 13px;
 padding: 25px 0;
 }
 
-#choose {
+.choose {
   width: 130px;
   height: 50px;
   border-radius: 25px;
@@ -619,6 +627,7 @@ color: #5b5b5b;
 font-size: 14px;
 font-weight: 300;
 line-height: 1.5;
+
 }
 .premium .col-l-5 img {
   float: right;
@@ -717,9 +726,9 @@ padding-right: 60px;
 
 .tell .social-media-fans .social-media {
   display: inline;
-  width: 75px;
+  width: 100px;
 }
-.tell .social-media-icon {
+.tell .social-media-fans .social-media-icon {
   height: 33px;
   width: 33px;
   color: white;
@@ -727,8 +736,7 @@ padding-right: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  float: left;
-  margin: 0 10px;
+  margin: 0 auto ;
 }
 
 .tell  .twitter .social-media-icon {
@@ -750,7 +758,10 @@ padding-right: 60px;
 .tell  .pinterest .social-media-icon {
   background-color: #b71c29;
 }
-
+.tell .social-media-fans .social-media p {
+ text-align: center;
+ width: 100%;
+}
 .contact {
   width: 100vw;
   background-color: #f7f7f7;
@@ -882,6 +893,7 @@ min-height: 250px;
 .footer .social-media-panel {
   display: flex;
  justify-content: center;
+ flex-wrap: wrap;
 }
 
 .footer .social-media {
@@ -999,6 +1011,59 @@ position: absolute;
   }
 }
 
+@media (max-width: 1200px) {
+  .about {
+    padding: 0;
+  }
+  .about .col-l-7 {
+    padding: 0 10vw;
+    box-sizing: border-box;
+  }
+  .about .col-l-7,
+  .about .col-l-5 {
+    text-align: center;
+  width: 100%;
+  }
+
+  .services .col-l-3 {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .premium .carousel-cell {
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .premium .carousel-cell .col-l-5 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+
+  .premium .carousel-cell .col-l-5 img {
+    height: 200px;
+  }
+
+  .premium .carousel-cell .col-l-7 {
+    margin: 0 auto;
+  }
+
+  .premium .carousel-cell .col-l-7 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%
+  }
+
+  .premium .carousel-cell .col-l-7 ul li {
+   width: 100%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .top-bar {
     height: 150px;
@@ -1022,7 +1087,9 @@ position: absolute;
   .top-bar > ul li a:hover:before {
     top: 40px;
   }
-
+  /*.grid-item {
+    width: 30%;
+  }*/
 }
 
 @media (min-width: 768px) {
@@ -1045,12 +1112,12 @@ left: 50px;
 
   
 .top-bar > ul li a:hover:before {
-  border-bottom: 4px solid #b88b58;
+  border-bottom: 8px solid #b88b58;
   content: '';
   width: 100%;
   position: absolute;
   z-index: 1;
-  top: 16px;
+  top: 20px;
 }
 
   .top-bar img {
@@ -1065,7 +1132,7 @@ left: 50px;
 
   .top-bar .menu li {
     display: block;
-    height: 30px;
+    height: 35px;
   }
 
   .top-bar .menu {
@@ -1094,17 +1161,25 @@ left: 50px;
   top: 0;
 }
 
-.about {
+/*.about {
   padding: 0 ;
-}
-.about div {
- text-align: center;
+}*/
+
+
+
+.about .col-l-5 {
+
+  display: flex;
+  margin: 0;
+  padding: 0 0 30px 0;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
 }
 
-.services,
-.services .col-l-3 {
+/*.services {
   padding: 0;
-  margin: 0
+  
 }/*
 .services .col-l-3 {
   display: flex;
@@ -1114,12 +1189,17 @@ left: 50px;
 }*/
 
 .jumbotron .slogan {
-  font-size: 30px
+  font-size: 50px
 }
 
 .grid-item {
-  width: 100%;
+  width: 50%;
 }
+.grid-button {
+  margin: 0;
+  padding: 0;
+}
+
 .client-logos .col-l-2 {
   margin: 10px;
   width: 100px;
@@ -1130,23 +1210,7 @@ left: 50px;
     margin: 0;
   }
 
-  .premium .carousel-cell {
-    height: 700px;
-  }
 
-  .premium .carousel-cell .col-l-5 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .premium .carousel-cell .col-l-5 img {
-    height: 200px;
-  }
-
-  .premium .col-l-7 {
-    margin-left: 0;
-  }
 
   .contact form {
     width: 100%;
@@ -1191,33 +1255,49 @@ left: 50px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .jumbotron .slogan {
     font-size: 30px
   }
-  .about .col-l-5 {
 
-    display: flex;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
+  .jumbotron .phone {
+    padding-bottom: 30px;
   }
-  .about .col-l-5 img {
-    width: 90%;
-    margin: 0;
-  }
-
-  .services {
-    padding: 0;
-    margin: 0;
-  }
+ 
+ 
 
   .jumbotron .phone {
     margin: 0;
   }
 
- 
+  .about .col-l-5 img {
+    width:90vw; 
+    height: auto;
+  }
+
+    .grid-item {
+      width: 100%;
+    }
+
+  @media (max-width: 400px)
+
+  {
+    .about {
+      padding: 5px;
+    }
+  }
   
+  @media (max-width: 350px)
+
+  {
+    .grid-item {
+      width: 100%;
+    }
+
+     .team.carousel .carousel-cell {
+      width: 100%;
+    }
+
+  }
 }
 /*# sourceMappingURL=style.css.map */
