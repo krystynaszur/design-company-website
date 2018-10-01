@@ -1,0 +1,22 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "content": "Praesent metus urna, feugiat a placerat elementum at leo",
+            "imageUrl": "assets/images/img9.png",
+            "class": "branding"
+        },
+        {
+            "content": "Praesent metus urna, feugiat a placerat elementum at leo",
+            "imageUrl": "assets/images/img10.png",
+            "class": "branding"
+        }
+        ,
+        {
+            "content": "Praesent metus urna, feugiat a placerat elementum at leo",
+            "imageUrl": "assets/images/img11.png",
+            "class": "branding"
+        }
+    
+    ]
+}
