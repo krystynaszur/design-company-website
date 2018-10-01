@@ -4,12 +4,14 @@
         {
             "content": "Praesent metus urna, feugiat a placerat elementum at leo",
             "imageUrl": "assets/images/img9.png",
-            "class": "adverts"
+            "class": "adverts",
+            "id": "img9"
         },
         {
             "content": "Praesent metus urna, feugiat a placerat elementum at leo",
             "imageUrl": "assets/images/img10.png",
-            "class": "adverts"
+            "class": "adverts",
+            "id": "img10"
         }
     ]
 }

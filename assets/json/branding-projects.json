@@ -4,18 +4,21 @@
         {
             "content": "Praesent metus urna, feugiat a placerat elementum at leo",
             "imageUrl": "assets/images/img9.png",
-            "class": "branding"
+            "class": "branding",
+            "id": "img9"
         },
         {
             "content": "Praesent metus urna, feugiat a placerat elementum at leo",
             "imageUrl": "assets/images/img10.png",
-            "class": "branding"
+            "class": "branding",
+            "id": "img10"
         }
         ,
         {
             "content": "Praesent metus urna, feugiat a placerat elementum at leo",
             "imageUrl": "assets/images/img11.png",
-            "class": "branding"
+            "class": "branding",
+            "id": "img11"
         }
     
     ]

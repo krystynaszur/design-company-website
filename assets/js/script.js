@@ -88,7 +88,7 @@ for (var i = 0; i < gridButtons.length; i++) {
     //  console.log(activeButton);
     changeActiveButton(document.activeElement.id);
     var showMoreButton = document.getElementById('show-more-button');
-    showMoreButton.style.display="inline";
+    showMoreButton.style.display = "inline";
   });
 };
 
@@ -122,7 +122,8 @@ showMore.addEventListener("click", function (event) {
     loadTemplate(response);
   });
   xhr.send();
-
+  var showMoreButton = document.getElementById('show-more-button');
+  showMoreButton.style.display = "none";
   /*var template = document.getElementById('template').innerHTML;
   var rendered = Mustache.render(template);
   document.getElementById('mustache').innerHTML = rendered;
@@ -143,16 +144,19 @@ function loadTemplate(response) {
   console.log(response.data[0].imageUrl);
   console.log(response.data[0].class);
   for (var i = 0; i < response.data.length; i++) {
-    var z = "";
-    z = document.createElement('div');
-    z.innerHTML = ' <div class="grid-item ' + response.data[i].class + '"><div class="layer">  <p>ABOUT</p>  <p>' + response.data[i].content + '</p></div><img src="' + response.data[i].imageUrl + '" alt=""></div>';
-    grid.appendChild(z);
-    iso.appended(z);
-    iso.layout();
-    
+    if (!document.querySelector("#" + response.data[i].id)) {
+      console.log(response.data[i].id);
+      var z = "";
+      z = document.createElement('div');
+      z.innerHTML = ' <div id=' + response.data[i].id + ' class="grid-item ' + response.data[i].class + '"><div class="layer">  <p>ABOUT</p>  <p>' + response.data[i].content + '</p></div><img src="' + response.data[i].imageUrl + '" alt=""></div>';
+      grid.appendChild(z);
+      iso.appended(z);
+      iso.layout();
+    }
+    var showMoreButton = document.getElementById('show-more-button');
+    showMoreButton.style.display = "none";
   }
-  var showMoreButton = document.getElementById('show-more-button');
-    showMoreButton.style.display="none";
+
 }
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
