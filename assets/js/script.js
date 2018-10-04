@@ -49,7 +49,10 @@ var flkty = new Flickity(elem, {
 
 
 var grid = document.querySelector('.grid');
+//var gridContainer = document.getElementById('grid-container');
 var iso = new Isotope(grid, {
+ // elementStyle: null,
+  resizesContainer: true,
   itemSelector: '.grid-item',
   layoutMode: 'fitRows',
   masonry: {
@@ -57,9 +60,14 @@ var iso = new Isotope(grid, {
   }
 });
 
+var activeButton="all-projects";
+
 var filtersElem = document.querySelector('.filters-button-group');
 filtersElem.addEventListener('click', function (event) {
-  // only work with buttons
+  console.log(event.target.id);
+  activeButton = event.target.id;
+  changeActiveButton(activeButton);
+  
   if (!matchesSelector(event.target, 'button')) {
     return;
   }
@@ -69,6 +77,11 @@ filtersElem.addEventListener('click', function (event) {
 
 });
 
+function changeActiveButton(idOfActiveButton) {
+  activeButton = idOfActiveButton;
+  console.log(activeButton)
+}
+
 /*
 var showMore = document.querySelector('.showMore');
 showMore.addEventListener( 'click', function( event ) {
@@ -76,7 +89,7 @@ showMore.addEventListener( 'click', function( event ) {
   elem.append(items);
   elem.isotope( 'appended', items );
 
-});*/
+});
 
 var gridButtons = document.querySelectorAll(".grid-button");
 console.log(gridButtons);
@@ -93,12 +106,8 @@ for (var i = 0; i < gridButtons.length; i++) {
 };
 
 var activeButtonId = "all-projects";
-console.log(activeButtonId);
+console.log(activeButtonId);*/
 
-function changeActiveButton(idOfActiveButton) {
-  activeButtonId = idOfActiveButton;
-  console.log(activeButtonId)
-}
 
 var showMore = document.querySelector('.showMore');
 /*
@@ -110,8 +119,8 @@ showMore.addEventListener("click", function(event) {
 
 showMore.addEventListener("click", function (event) {
 
-  console.log(activeButtonId);
-  var url = "./assets/json/" + activeButtonId + ".json";
+  console.log(activeButton);
+  var url = "./assets/json/" + activeButton + ".json";
 
   var xhr = new XMLHttpRequest();
   xhr.open("GET", url);
@@ -161,4 +170,8 @@ function loadTemplate(response) {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function addProjects(projectsForAdding) {
+  console.log(projectsForAdding);
 }

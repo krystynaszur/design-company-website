@@ -304,14 +304,22 @@ margin-bottom: 50px;
   margin: 0 auto;
 }
 .grid {
+ // height: auto !important;
+  //position: relative;
   width: 100%;
+  max-width: 1200px;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
+/*
+#grid-container {
+min-height: 220px;
+height: auto;
+}*/
 .grid-item { 
   width: 25%;
 margin-top: 10px;
@@ -319,6 +327,7 @@ display: flex;
 justify-content: center;
 box-sizing: border-box;
 position: relative;
+height: 170px;
 }
 
 .grid-item .layer {
@@ -751,6 +760,7 @@ line-height: 21px;
   justify-content: center;
   box-sizing: border-box;
   padding: 20px 0;
+  overflow: hidden;
 }
 
 .tell img {
@@ -1135,9 +1145,9 @@ position: absolute;
   .top-bar > ul li a:hover:before {
     top: 40px;
   }
-  /*.grid-item {
-    width: 30%;
-  }*/
+  .grid-item {
+    width: 33.3%;
+  }
 }
 
 @media (min-width: 768px) {
