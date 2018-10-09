@@ -1,2 +1,4 @@
-# zad-12.8
-https://krystynaszur.github.io/zad-12.8/
+
+Responsive website for a design company
+HTML5, CSS3, Javascript, Flickity and isotope libraries
+https://krystynaszur.github.io/design-company-website/
